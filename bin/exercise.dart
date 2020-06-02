@@ -11,14 +11,14 @@ void main(){
 
 
   // map
-  Map choice = ['Number' : 12];
-  String number = choice['Number'];
+  Map choice = { "Number" : "12 ", "sign":"spade"};
 
-  String sign = choice['sign'];
+  String number = choice["Number"];
+  String sign = choice["sign"];
 
-  print('your cars is' +);
+  print("your cars is $Number");
 
-  print('Welcome yasmin salah');
+  print(choice);
 
 
 
