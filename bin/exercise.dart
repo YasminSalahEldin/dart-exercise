@@ -7,19 +7,43 @@ void main(){
   List<String> signs = ['Hearts','Diamonds','Clubs','Spade'];
 
   Random numberCollection = Random();
+  int numberIndex = numberCollection.nextInt(12);
+
+  String name;
+  switch(numberIndex){
+    case 0:
+     name ='Ace';
+     break;
+    case 10:
+      name ='jack';
+      break;
+    case 11:
+     name = 'queen';
+     break;
+    case 12:
+      name ='king';
+          break;
+    default:
+      name =  numbers[numberIndex].toString();
+      break;
+  }
+
+
   Random signCollection = Random();
+  int signIndex = signCollection.nextInt(3);
 
 
   // map
-  Map choice = ['Number' : 12];
-  String number = choice['Number'];
+  Map choice = { "Number" : name, "Sign":signs[signIndex]};
 
-  String sign = choice['sign'];
+  String number = choice["Number"];
+  String sign = choice["Sign"];
 
-  print('your cars is' +);
 
-  print('Welcome yasmin salah');
+  print('welcome');
 
+
+  print("your card is $number $sign");
 
 
 }
